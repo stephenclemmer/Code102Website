@@ -1,0 +1,76 @@
+h1 {
+    border-style: solid;
+    border-width: 3px;
+    border-color:black;
+    color: red;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+
+ul {
+    border-style: solid;
+    border-top-width: 0px;
+    border-color:black;
+    text-align: center;
+    margin-top: 0px;
+    padding: 10px;
+}
+
+li {
+    display: inline-block;
+    padding: 0px, 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.Welcome{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+}
+
+.Gyrados{
+    border-style: solid;
+    border-width: 3px;
+    border-color:black;
+    padding: 10px;
+}
+
+.PhotoCredit{
+    font-size: xx-small;
+    padding: 10px;
+
+}
+
+.PokemonPicture {
+    border-style: solid;
+    border-width: 3px;
+    border-color:black;
+    padding: 10px;
+}
+
+.section1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.section2{
+    display: inline-block;
+    width: 250px;
+}
+
+.section3 {
+    display: inline-block;
+    width: 250px;
+}
+
+div{
+    border-style: solid;
+    border-width: 3px;
+    border-color:black;
+}
