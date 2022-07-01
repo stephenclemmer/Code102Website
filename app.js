@@ -51,6 +51,25 @@
 
 
 
+// Start of Lab 8
+
+function magikarpPic(){
+    let number = prompt("What's your favorite whole number between 1 and 10?")
+
+    for(let i = 0; i < number; i++){
+            document.write("<img src='https://upload.wikimedia.org/wikipedia/en/3/3f/Pok%C3%A9mon_Magikarp_art.png' />")
+    }
+}
+
+
+
+
+
+// End of Lab 8
+
+
+
+
 
 // Start of Lab 7 Function: This created a recursive loop.
 
@@ -81,3 +100,5 @@ function guessPokemon(){
 }   
 
 // End of Lab 7 Function
+
+
