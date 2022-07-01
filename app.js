@@ -9,22 +9,22 @@
 
 // Start of First Function
 
-function guessPokemon(){
+// function guessPokemon(){
 
-    let usersPokemon = prompt("Guess my favorite Pokemon?")
-    let message;
+//     let usersPokemon = prompt("Guess my favorite Pokemon?")
+//     let message;
 
-    if (usersPokemon == null) {
-        message = "What? You don't want to guess?! Okay, you're officially no fun.";
-    } else if (usersPokemon.toLowerCase() == "pikachu") {
-        message = "You got it! I find pikachu electrifying!";
-    } else {
-        message = "That's a great pokemon, but that's not my favorite. Try again! (Hint: Sometimes they are sweet and sometimes they are downright shocking.";
-    }
-    // Displaying 'message'on the Site by placing 'document.write()' within the function. See related <script> in HTML to see .
-    document.write(message);
-    return message;
-}   
+//     if (usersPokemon == null) {
+//         message = "What? You don't want to guess?! Okay, you're officially no fun.";
+//     } else if (usersPokemon.toLowerCase() == "pikachu") {
+//         message = "You got it! I find pikachu electrifying!";
+//     } else {
+//         message = "That's a great pokemon, but that's not my favorite. Try again! (Hint: Sometimes they are sweet and sometimes they are downright shocking.";
+//     }
+//     // Displaying 'message'on the Site by placing 'document.write()' within the function. See related <script> in HTML to see .
+//     document.write(message);
+//     return message;
+// }   
 
 // End of First Function
 
@@ -49,3 +49,35 @@ function guessPokemon(){
 // let friendlyComputer = addNumbers("Hello ", "World");
 // console.log(friendlyComputer);
 
+
+
+
+// Start of Lab 7 Function: This created a recursive loop.
+
+function guessPokemon(){
+
+    let usersPokemon = prompt("Guess my favorite Pokemon? Hint: Sometimes they are sweet and sometimes they are downright shocking.")
+    
+    let message;
+
+    if (usersPokemon == null) {
+        console.log("you are in the if")
+        message = "What? You don't want to guess?! Okay, try again next time!";
+        document.write(message);
+    }
+    else if (usersPokemon.toLowerCase() == "pikachu") {
+        console.log("you are in the else if")
+        message = "You got it! I find pikachu electrifying!";
+        document.write(message);
+    } else {
+        console.log("you are in the else")
+        guessPokemon();
+        // message = "That's a great pokemon, but that's not my favorite. Try again!"; 
+    }
+    // Displaying 'message'on the Site by placing 'document.write()' within the function. See related <script> in HTML to see .
+   
+    // Refactored below
+    // return message;
+}   
+
+// End of Lab 7 Function
